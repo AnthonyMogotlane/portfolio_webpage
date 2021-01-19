@@ -1,0 +1,50 @@
+.btn {
+  display: block;
+  padding: .5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    background: $secondary-color;
+    color: #000;
+    @include easeOut;
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: #333;
+}
+
+.btn-dark {
+  @extend .btn;
+  background: #000;
+}
+
+.show-all {
+  @extend .btn;
+  background: #333;
+  margin: auto;
+  width: 110px;
+  margin-top: 50px; 
+
+  &:hover {
+
+    a {
+      color: #000;
+    }
+    
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
+  
+}

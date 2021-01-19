@@ -1,0 +1,105 @@
+//Small tablets and mobile
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    //display: none;
+    .menu-nav {
+      position: absolute;
+      right: 0px;
+      top: 8vh;
+      height: 92vh;
+      z-index: 3;
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      //visibility: hidden;
+      transition: all 0.7s ease-in;
+
+
+      &.show {
+        transform: translateX(0%);
+        opacity: 0.9;
+        //visibility: visible;
+      }
+
+
+    }
+
+
+    // Menu button
+    .menu-btn {
+      display: block;
+      cursor: pointer;
+
+      &.close {
+        .box-1 {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .box-2 {
+          opacity: 0;
+        }
+        .box-3 {
+          transform: rotate(45deg) translate(-5px, -6px);
+        }
+      }
+    }
+
+  } 
+
+
+  //Project Section
+  .project-tile {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    'project-1'
+    'project-2'
+    'project-3'
+    'project-4';
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .project-1 {
+      grid-area: project-1;
+    }
+
+    .project-2 {
+      grid-area: project-2;
+    }
+
+    .project-3 {
+      grid-area: project-3;
+    }
+
+    .project-4 {
+      grid-area: project-4;
+    }
+  }
+
+
+  //Skills Section
+  .set {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    letter-spacing: 1px;
+  }
+
+
+}
+
+
+
+//Small laptops and tablets
+@media screen and (max-width: 1024px) { 
+}
