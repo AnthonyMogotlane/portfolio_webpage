@@ -1,0 +1,356 @@
+.btn, .show-all, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  color: #fff;
+}
+.btn:hover, .show-all:hover, .btn-dark:hover, .btn-light:hover {
+  background: yellow;
+  color: #000;
+  transition: all 0.6s ease-out;
+}
+
+.btn-light {
+  background: #333;
+}
+
+.btn-dark {
+  background: #000;
+}
+
+.show-all {
+  background: #333;
+  margin: auto;
+  width: 110px;
+  margin-top: 50px;
+}
+.show-all:hover a {
+  color: #000;
+}
+.show-all a {
+  color: #fff;
+  text-decoration: none;
+}
+.show-all a:hover {
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 0.6s ease-out;
+}
+
+body {
+  background-image: url("../img/background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: grey;
+  position: fixed;
+  width: 100%;
+  min-height: 8vh;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+}
+header .menu-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  list-style-type: none;
+}
+header .nav-item {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+header .branding img {
+  width: 50px;
+}
+header a {
+  text-decoration: none;
+  color: yellow;
+}
+header a:hover {
+  color: #000;
+}
+header .menu-btn {
+  display: none;
+}
+header .menu-btn div {
+  background-color: yellow;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.about video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.about .content {
+  text-align: center;
+}
+.about .content h1 {
+  font-size: 50px;
+}
+.about .content h1 .name {
+  color: yellow;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 100px;
+}
+.about .content h1 .name:hover {
+  font-size: 0;
+}
+.about .content h1 .name:hover:after {
+  content: attr(data-hover);
+  font-size: 100px;
+}
+.about .content p .title {
+  color: yellow;
+  letter-spacing: 1px;
+}
+
+#projects {
+  background: #5a5a5a;
+  padding: 80px 0;
+}
+#projects h1 {
+  text-align: center;
+}
+#projects hr {
+  margin: auto;
+  width: 70px;
+  height: 5px;
+  background: yellow;
+  margin-bottom: 50px;
+}
+
+.project-tile {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas: "project-1 project-2" "project-3 project-4";
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.project-tile .project-1 {
+  grid-area: project-1;
+}
+.project-tile .project-2 {
+  grid-area: project-2;
+}
+.project-tile .project-3 {
+  grid-area: project-3;
+}
+.project-tile .project-4 {
+  grid-area: project-4;
+}
+.project-tile .project img {
+  width: 100%;
+  height: 300px;
+  border: solid #000 2px;
+}
+.project-tile .project img:hover {
+  opacity: 0.3;
+  transition: all 0.6s ease-out;
+}
+
+#skills {
+  text-align: center;
+  padding: 80px 0;
+  background: #343434;
+  color: #fff;
+  opacity: 0.9;
+}
+#skills hr {
+  margin: auto;
+  width: 50px;
+  height: 5px;
+  background: yellow;
+  margin-bottom: 50px;
+}
+
+.set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-style: italic;
+}
+
+#contact {
+  background: #5a5a5a;
+  color: #fff;
+  padding: 80px 0;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.contact-me {
+  text-align: center;
+}
+.contact-me h1 {
+  color: #000;
+}
+.contact-me h2 {
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #000;
+}
+.contact-me hr {
+  margin: auto;
+  width: 100px;
+  height: 5px;
+  background: yellow;
+  margin-bottom: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+.icons i:hover {
+  color: #000;
+  transition: all 0.6s ease-out;
+}
+
+.boxes {
+  text-align: right;
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  z-index: 1;
+  margin-top: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.boxes video {
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.boxes .contact-box div {
+  padding: 10px 20px 0px 0px;
+}
+.boxes .contact-box div span {
+  color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header .menu-nav {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    z-index: 3;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: all 0.7s ease-in;
+  }
+  header .menu-nav.show {
+    transform: translateX(0%);
+    opacity: 0.9;
+  }
+  header .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  header .menu-btn.close .box-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  header .menu-btn.close .box-2 {
+    opacity: 0;
+  }
+  header .menu-btn.close .box-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .project-tile {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-areas: "project-1" "project-2" "project-3" "project-4";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .project-tile .project-1 {
+    grid-area: project-1;
+  }
+  .project-tile .project-2 {
+    grid-area: project-2;
+  }
+  .project-tile .project-3 {
+    grid-area: project-3;
+  }
+  .project-tile .project-4 {
+    grid-area: project-4;
+  }
+
+  .set {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
